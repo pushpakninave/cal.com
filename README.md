@@ -1,3 +1,45 @@
+
+#
+
+## SECTIONS
+
+- Nextjs -- ssr
+- Tailwind css -- styling
+- Shadcn -- ui component
+- authjs -- authentication
+- nylas -- calendar api
+- prisma -- orm
+- supabase -- db
+- vercel -- deployment
+
+### ARCHITECTURE DESIGN:
+
+[![](https://app.eraser.io/workspace/4jM9dx6JPhdeiVJ2UtLP/preview?elements=ysOr8MKp3HOdA1Fqm7rwEg&type=embed)]()
+
+### WORKFLOW
+
+1. Create Next.js project
+2. Create Dashboard layout
+3. Onboarding Route
+
+    a. Authenticate user using Authjs + Nylas to connect with out calendar
+
+    b. Nylas creates connection to our calendar and we get a grant_id and email_id in return to authenticate all api requests
+
+4. Create settings route for changing pp & username
+5. Create Availability route
+6. Create Event Route(create/update/delete)
+7. Create Booking Form
+
+    a. Unique Url with username
+
+    b. Get data from our availability page. Get data from nylas display the correct date and available time frames
+
+    c. Use nylas api to book the event in the calendar
+
+8. Create the meetings route (see when, with whom and meeting call provider)
+9. Create landing page.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
