@@ -9,7 +9,7 @@ export default function AuthModal() {
     return (
         <Dialog >
             <DialogTrigger asChild>
-                <Button className='rounded-2xl'>Try out</Button>
+                <Button className='rounded-2xl mx-4'>Try out</Button>
             </DialogTrigger>
             <DialogContent className='sm:max-w-[360px]'>
                 <DialogTitle className='none'></DialogTitle>

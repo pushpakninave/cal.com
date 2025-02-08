@@ -8,13 +8,15 @@ export default async function Navbar() {
     const session = await auth();
 
     return (
-        <div className="flex py-3 items-center justify-between max-w-5xl mx-auto px-4 sm:px-6 lg:px-6 bg-muted/40 border-2 rounded-2xl m-2">
+        <div className="flex py-3 items-center justify-between max-w-5xl mx-auto pl-4 sm:pl-6 lg:pl-6 bg-muted/40 border-2 rounded-2xl m-2">
             <div>
                 <Link href="/">
                     <Logo />
                 </Link>
             </div>
-            {session?.user ? <CalLinks /> : <AuthModal />}
+            <div>
+                {session?.user ? <CalLinks /> : <AuthModal />}
+            </div>
         </div>
     )
 }

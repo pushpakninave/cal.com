@@ -9,6 +9,8 @@
 - authjs -- authentication
 - nylas -- calendar api
 - prisma -- orm
+- zod -- typesafety
+- conform -- validation
 - supabase -- db
 - vercel -- deployment
 
