@@ -51,7 +51,7 @@ export default function MobileNav() {
 
     return (
         <div>
-            <div className='lg:hidden flex flex-row'>
+            <div className='md:hidden flex flex-row'>
                 <div>
                     <ThemeToggle />
                 </div>

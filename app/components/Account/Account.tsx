@@ -13,7 +13,7 @@ export function Account() {
     const [open, setOpen] = useState(false);
     const username = session?.data?.user?.name;
     const initials = username ? username.slice(0, 2).toUpperCase() : '';
-    console.log("session info", session);
+    // console.log("session info", session);
     return (
         <div>
             <>

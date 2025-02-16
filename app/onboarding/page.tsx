@@ -30,7 +30,7 @@ export default function Onboarding() {
     });
 
     return (
-        <div className='min-h-screen w-screen flex items-center justify-center'>
+        <div className='min-h-screen w-screen flex flex-col items-center justify-center'>
             <Card>
                 <CardHeader>
                     <CardTitle className='flex flex-row items-center gap-2'>
@@ -44,14 +44,14 @@ export default function Onboarding() {
                     <CardContent className='grid gap-y-5'>
                         <div className='grid gap-y-2'>
                             <Label>Full Name</Label>
-                            <Input placeholder='Pushpak N' name={fields.name.name} defaultValue={fields.name.initialValue} key={fields.name.key} />
+                            <Input placeholder='Jhon Doe' name={fields.name.name} defaultValue={fields.name.initialValue} key={fields.name.key} />
                         </div>
                         <p className='text-red-500 text-sm'>{fields.name.errors}</p>
                         <div className='grid gap-y-2'>
                             <Label>Username</Label>
                             <div className='flex rounded-md'>
                                 <span className='inline-flex items-center px-3 bg-muted border-r-0 text-sm text-muted-foreground rounded-l-md'>KalNirnaay.com/</span>
-                                <Input name={fields.username.name} defaultValue={fields.username.initialValue} key={fields.username.key} placeholder='shailyghoshi' className='rounded-l-none' />
+                                <Input name={fields.username.name} defaultValue={fields.username.initialValue} key={fields.username.key} placeholder='username' className='rounded-l-none' />
                             </div>
                             <p className='text-red-500 text-sm'>{fields.username.errors}</p>
                         </div>

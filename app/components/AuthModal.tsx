@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import React from 'react'
 import Logo from './Logo'
-import { signIn } from '../utils/auth'
 import { GithubAuthButton, GoogleAuthButton } from './SubmitButtons'
+import { SignIn } from '../utils/actions'
 
 export default function AuthModal() {
     return (
@@ -17,16 +17,10 @@ export default function AuthModal() {
                     <Logo />
                 </DialogHeader>
                 <div className='flex flex-col mt-5 gap-2'>
-                    <form action={async () => {
-                        "use server"
-                        await signIn("google");
-                    }} className='w-full'>
+                    <form action={() => SignIn("google")} className='w-full'>
                         <GoogleAuthButton />
                     </form>
-                    <form action={async () => {
-                        "use server"
-                        await signIn("github");
-                    }} className='w-full'>
+                    <form action={() => SignIn("github")} className='w-full'>
                         <GithubAuthButton />
                     </form>
 

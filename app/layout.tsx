@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <div className="mx-2">
+          <div className="w-screen z-10">
             <Navbar />
           </div>
           <div>

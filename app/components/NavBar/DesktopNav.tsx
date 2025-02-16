@@ -40,7 +40,7 @@ export default function DesktopNav() {
 
     return (
         <div>
-            <div className='hidden lg:flex flex-row gap-4'>
+            <div className='hidden md:flex flex-row gap-4'>
                 {dashboardLinks.map((link) => (
                     <div key={link.id}>
                         <HoverCard openDelay={2} closeDelay={1}>
